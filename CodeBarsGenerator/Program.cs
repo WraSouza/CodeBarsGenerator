@@ -1,3 +1,5 @@
+using CodeBarsGenerator.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +19,9 @@ builder.WebHost.UseSentry(o =>
     o.Debug = true;
     o.TracesSampleRate = 0.1;
 });
+
+builder.Services.AddScoped<IBarcodeService, BarCodeService>();
+builder.Services.AddScoped<IQrcodeService, QrCodeService>();
 
 var app = builder.Build();
 

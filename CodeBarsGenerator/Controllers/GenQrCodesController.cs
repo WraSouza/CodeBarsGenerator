@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CodeBarsGenerator.Helper;
+using CodeBarsGenerator.Service;
+using Microsoft.AspNetCore.Mvc;
 using System.Drawing;
 using System.Drawing.Imaging;
 using ZXing;
@@ -8,30 +10,27 @@ namespace CodeBarsGenerator.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GenQrCodesController : ControllerBase
+    public class GenQrCodesController(IQrcodeService service) : ControllerBase
     {       
 
         [HttpGet("{codigo}")]
         public async Task<IActionResult> GetQrcode(string codigo)
         {
-            var writer = new BarcodeWriter
+            try
             {
-                // A única mudança real é aqui: de CODE_128 para QR_CODE
-                Format = BarcodeFormat.QR_CODE,
-                Options = new ZXing.QrCode.QrCodeEncodingOptions
-                {
-                    Width = 300,  // QR Codes costumam ser quadrados
-                    Height = 300,
-                    Margin = 1,   // Margem branca ao redor
-                    CharacterSet = "UTF-8" // Garante que acentos funcionem no QR Code
-                }
-            };
+                var imagem = service.GerarQrCode(codigo);
 
-            using Bitmap bitmap = writer.Write(codigo);
-            using var ms = new MemoryStream();
-            bitmap.Save(ms, ImageFormat.Bmp);
+                return File(imagem, "image/bmp");
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Erro ao gerar o código de barras.");
+            }
 
-            return File(ms.ToArray(), "image/bmp");
 
         }
     }
