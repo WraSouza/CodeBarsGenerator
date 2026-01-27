@@ -1,0 +1,6 @@
+@CodeBarsGenerator_HostAddress = http://localhost:5283
+
+GET {{CodeBarsGenerator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
