@@ -1,10 +1,12 @@
-﻿using CodeBarsGenerator.Service;
+﻿using Asp.Versioning;
+using CodeBarsGenerator.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeBarsGenerator.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    // Uma base para tudo que for V1
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class GenQrCodesController(IQrcodeService service) : ControllerBase
     {
 
@@ -23,7 +25,7 @@ namespace CodeBarsGenerator.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(500, "Erro ao gerar o código de barras.");
+                return StatusCode(500, "Erro ao gerar o QR Code.");
             }
 
 

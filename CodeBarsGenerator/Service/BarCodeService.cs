@@ -21,7 +21,8 @@ namespace CodeBarsGenerator.Service
                 {
                     Width = 300,
                     Height = 150,
-                    Margin = 10
+                    Margin = 10,
+                    PureBarcode = true
                 }
             };
 
