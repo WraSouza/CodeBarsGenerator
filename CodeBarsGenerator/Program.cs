@@ -18,26 +18,6 @@ builder.Host.UseWindowsService();
 
 var sdn = builder.Configuration.GetConnectionString("SentryDsn");
 
-// Registra o documento para a V1
-builder.Services.AddOpenApi("v1", options =>
-{
-    options.AddDocumentTransformer((document, context, cancellationToken) =>
-    {
-        document.Info.Title = "API - V1";
-        return Task.CompletedTask;
-    });
-});
-
-//// Registra o documento para a V2
-builder.Services.AddOpenApi("v2", options =>
-{
-    options.AddDocumentTransformer((document, context, cancellationToken) =>
-    {
-        document.Info.Title = "API - V2";
-        return Task.CompletedTask;
-    });
-});
-
 builder.WebHost.UseSentry(o =>
 {
     o.Dsn = sdn;
@@ -46,23 +26,22 @@ builder.WebHost.UseSentry(o =>
     o.TracesSampleRate = 0.1;
 });
 
-
-//// --- INICIO DA CONFIGURAÇÃO DE VERSIONAMENTO ---
-var apiVersioningBuilder = builder.Services.AddApiVersioning(options =>
+builder.Services.AddApiVersioning(options =>
 {
-    options.DefaultApiVersion = new ApiVersion(1, 0);
-    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1);
     options.ReportApiVersions = true;
-    options.ApiVersionReader = new UrlSegmentApiVersionReader();
-});
-
-// É aqui que a mágica acontece para o Swagger e o Explorer
-apiVersioningBuilder.AddApiExplorer(options =>
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new UrlSegmentApiVersionReader(),
+        new HeaderApiVersionReader("X-Api-Version"));
+})
+.AddMvc() // This is needed for controllers
+.AddApiExplorer(options =>
 {
-    options.GroupNameFormat = "'v'VVV";
+    options.GroupNameFormat = "'v'V";
     options.SubstituteApiVersionInUrl = true;
 });
-//// --- FIM DA CONFIGURAÇÃO ---
+
 
 builder.Services.AddScoped<IBarcodeService, BarCodeService>();
 builder.Services.AddScoped<IQrcodeService, QrCodeService>();
@@ -74,7 +53,6 @@ app.UseSentryTracing();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.MapOpenApi();
     app.MapScalarApiReference();
 

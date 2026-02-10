@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CodeBarsGenerator.Controllers
 {
-    // Uma base para tudo que for V1
-    [ApiVersion("1.0")]
+    [ApiController]
+    [ApiVersion(1)]    
     [Route("api/v{version:apiVersion}/[controller]")]
     public class GenQrCodesController(IQrcodeService service) : ControllerBase
     {
-
+        [MapToApiVersion(1)]
         [HttpGet("{codigo}")]
-        public async Task<IActionResult> GetQrcode(string codigo)
+        public IActionResult GetQrcode(string codigo)
         {
             try
             {
@@ -27,7 +27,6 @@ namespace CodeBarsGenerator.Controllers
             {
                 return StatusCode(500, "Erro ao gerar o QR Code.");
             }
-
 
         }
     }
