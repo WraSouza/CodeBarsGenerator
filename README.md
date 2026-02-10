@@ -12,17 +12,16 @@ O Code Bars Generator é uma API que tem a função de gerar código de barras e
 Ele foi desenvolvido para suprir a demanda de geração de etiquetas utilizadas no Crystal Reports, empregado no SAP Business One (SAP B1), que possui limitações no consumo de serviços externos via HTTPS.
 
 ## API Endpoints
+```text
+  - GET /api/v1/GenCodeBars/{code} 
+  → Retorna um código de barra no formato BMP
 
-- GET /api/v1/GenCodeBars/{code} 
-→ Retorna um código de barra no formato BMP
-
-- GET /api/v1/GenQrCodes/{code} 
-→ Retorna um QR Code no formato BMP
-
-### Exemplo de Uso
+  - GET /api/v1/GenQrCodes/{code} 
+  → Retorna um QR Code no formato BMP
+```
+## Exemplo de Uso
 
 #### Gerar Código de Barras
-**Request**
 
 - GET /api/v1/GenCodeBars/123456789
 
@@ -32,7 +31,7 @@ Ele foi desenvolvido para suprir a demanda de geração de etiquetas utilizadas 
   <em>Barcode image generated in BMP format</em>
 </p>
 
-
+#### Gerar QR Code
 - GET /api/v1/GenQrCodes/123456789
 
   <p align="center">
@@ -40,6 +39,11 @@ Ele foi desenvolvido para suprir a demanda de geração de etiquetas utilizadas 
   <br/>
   <em>QR Code image generated in BMP format</em>
 </p>
+
+| Pacote | Versão | Descrição |
+| :--- | :--- | :--- |
+| ZXing | `string` | O valor que será convertido em código de barras ou QR Code. |
+| `size` | `int` | (Opcional) Largura da imagem gerada. |
 
 
 
