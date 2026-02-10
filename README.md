@@ -40,10 +40,12 @@ Ele foi desenvolvido para suprir a demanda de geração de etiquetas utilizadas 
   <em>QR Code image generated in BMP format</em>
 </p>
 
-| Pacote | Versão | Descrição |
-| :--- | :--- | :--- |
-| ZXing | `string` | O valor que será convertido em código de barras ou QR Code. |
-| `size` | `int` | (Opcional) Largura da imagem gerada. |
+| Pacote | Versão | 
+| :--- | :--- |
+| ZXing.Net | 0.16.11 | 
+| Sentry.AspNet Core | 6.1.0 | 
+| ZXing.Net.Bindings.Windows.Compatibility | 0.16.14 |
+| SixLabors.ImageSharp | 3.1.12 |
 
 
 
