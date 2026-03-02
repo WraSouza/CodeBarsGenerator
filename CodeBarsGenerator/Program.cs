@@ -18,13 +18,19 @@ builder.Host.UseWindowsService();
 
 var sdn = builder.Configuration.GetConnectionString("SentryDsn");
 
-builder.WebHost.UseSentry(o =>
+var useSentry = !string.IsNullOrWhiteSpace(sdn);
+
+if (useSentry)
 {
-    o.Dsn = sdn;
-    // When configuring for the first time, to see what the SDK is doing:
-    o.Debug = true;
-    o.TracesSampleRate = 0.1;
-});
+    builder.WebHost.UseSentry(o =>
+    {
+        o.Dsn = sdn;
+        // When configuring for the first time, to see what the SDK is doing:
+        o.Debug = true;
+        o.TracesSampleRate = 0.1;
+    });
+}
+
 
 builder.Services.AddApiVersioning(options =>
 {
@@ -48,7 +54,10 @@ builder.Services.AddScoped<IQrcodeService, QrCodeService>();
 
 var app = builder.Build();
 
-app.UseSentryTracing();
+if (useSentry)
+{
+    app.UseSentryTracing();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
