@@ -1,8 +1,7 @@
 ﻿using CodeBarsGenerator.Validator;
-using System.Drawing;
-using System.Drawing.Imaging;
+using SkiaSharp;
 using ZXing;
-using ZXing.Windows.Compatibility;
+using ZXing.SkiaSharp;
 
 namespace CodeBarsGenerator.Service
 {
@@ -10,10 +9,9 @@ namespace CodeBarsGenerator.Service
     {
         public byte[] GerarCodigoBarras(string codigo)
         {
-            //throw new NotImplementedException();
             BarcodeValidator.Validar(codigo);
 
-            // 1. Configura o escritor
+            // 1. Utilizamos o BarcodeWriter do namespace ZXing.SkiaSharp
             var writer = new BarcodeWriter
             {
                 Format = BarcodeFormat.CODE_128,
@@ -26,13 +24,16 @@ namespace CodeBarsGenerator.Service
                 }
             };
 
-            // 2. Gera o Bitmap (Sem precisar de Renderer manual, o Binding Windows já resolve)
-            using Bitmap bitmap = writer.Write(codigo);
+            // 2. Gera o SKBitmap (nativo do SkiaSharp, roda em Linux)
+            using var bitmap = writer.Write(codigo);
 
-            using var ms = new MemoryStream();
-            bitmap.Save(ms, ImageFormat.Bmp);
+            // 3. Converte o bitmap para uma imagem (PNG é mais recomendado que BMP para web/linux)
+            using var image = SKImage.FromBitmap(bitmap);
+            using var data = image.Encode(SKEncodedImageFormat.Png, 100);
 
-            return ms.ToArray();
+            // 4. Retorna os bytes diretamente
+            return data.ToArray();
         }
     }
+
 }

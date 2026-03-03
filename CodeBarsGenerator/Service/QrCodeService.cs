@@ -1,7 +1,7 @@
-﻿using System.Drawing;
-using System.Drawing.Imaging;
+﻿using CodeBarsGenerator.Validator;
+using SkiaSharp;
 using ZXing;
-using ZXing.Windows.Compatibility;
+using ZXing.SkiaSharp;
 
 namespace CodeBarsGenerator.Service
 {
@@ -9,24 +9,30 @@ namespace CodeBarsGenerator.Service
     {
         public byte[] GerarQrCode(string codigo)
         {
+            BarcodeValidator.Validar(codigo);
+
+            // 1. Utilizamos o BarcodeWriter do namespace ZXing.SkiaSharp
             var writer = new BarcodeWriter
             {
-                // A única mudança real é aqui: de CODE_128 para QR_CODE
                 Format = BarcodeFormat.QR_CODE,
-                Options = new ZXing.QrCode.QrCodeEncodingOptions
+                Options = new ZXing.Common.EncodingOptions
                 {
-                    Width = 300,  // QR Codes costumam ser quadrados
+                    Width = 300,
                     Height = 300,
-                    Margin = 1,   // Margem branca ao redor
-                    CharacterSet = "UTF-8" // Garante que acentos funcionem no QR Code
+                    Margin = 1,
+                    PureBarcode = true                    
                 }
             };
 
-            using Bitmap bitmap = writer.Write(codigo);
-            using var ms = new MemoryStream();
-            bitmap.Save(ms, ImageFormat.Bmp);
+            // 2. Gera o SKBitmap (nativo do SkiaSharp, roda em Linux)
+            using var bitmap = writer.Write(codigo);
 
-            return ms.ToArray();
+            // 3. Converte o bitmap para uma imagem (PNG é mais recomendado que BMP para web/linux)
+            using var image = SKImage.FromBitmap(bitmap);
+            using var data = image.Encode(SKEncodedImageFormat.Png, 100);
+
+            // 4. Retorna os bytes diretamente
+            return data.ToArray();
         }
     }
 }

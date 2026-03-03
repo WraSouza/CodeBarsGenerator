@@ -23,9 +23,9 @@ namespace CodeBarsGenerator.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Erro ao gerar o QR Code.");
+                return StatusCode(500, "Erro ao gerar o código de barras.");
             }
 
         }
