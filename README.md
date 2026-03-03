@@ -4,6 +4,7 @@
 ![Web API](https://img.shields.io/badge/Web-API-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-UI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 ![Version](https://img.shields.io/badge/API%20Version-v1-blue?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 
 ## Code Bars Generator
@@ -44,9 +45,7 @@ Ele foi desenvolvido para suprir a demanda de geração de etiquetas utilizadas 
 | :--- | :--- |
 | ZXing.Net | 0.16.11 | 
 | Sentry.AspNet Core | 6.1.0 | 
-| ZXing.Net.Bindings.Windows.Compatibility | 0.16.14 |
-| SixLabors.ImageSharp | 3.1.12 |
-
+| ZXing.Net.Bindings.SkiaSharp | 0.16.22 |
 
 
 ## EN - ENGLISH Code Bars Generator
@@ -61,3 +60,12 @@ It was developed to meet the demand for label generation in Crystal Reports, use
 
 - **GET** `/api/v1/GenQrCodes/{code}`  
   Returns a QR code image in **BMP** format.
+
+
+## 🐳 Rodando via Docker (Recomendado)
+
+Esta API está pronta para rodar em ambientes Linux e containers Docker.
+
+```bash
+# Baixar e rodar a imagem
+docker run -d -p 8080:8080 --name codebars wladimirsouza/codebarsgenerator:latest
