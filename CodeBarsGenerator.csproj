@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <UserSecretsId>c94864d0-6e2e-4b52-9907-01143cba5a33</UserSecretsId> -->
+  
+  <!-- Metadados do pacote NuGet --> 
+  <GeneratePackageOnBuild>true</GeneratePackageOnBuild> 
+   <IsPackable>true</IsPackable>
+  <PackageId>BarcodeLib</PackageId>
+  <Version>1.0.0</Version> 
+  <Authors>Wladimir</Authors> 
+  <Company>Wladimir</Company>
+  <Description>Biblioteca para geração de códigos de barras e QR Codes usando ZXing e SkiaSharp.</Description>
+  <PackageTags>barcode qrcode zxing skia</PackageTags>
+  <RepositoryUrl>https://github.com/WraSouza/BarcodeLib</RepositoryUrl>
+  <UserSecretsId>ebaa7d7b-dde4-4c70-94b6-959bb2853ff4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Http" Version="10.2.3" />
+    <PackageReference Include="Asp.Versioning.Mvc" Version="10.2.1" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="10.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.11" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.17.2" />
+    <PackageReference Include="Sentry.AspNetCore" Version="14.12.1-dump1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+    <PackageReference Include="Serilog.Sinks.Slack" Version="2.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.2.3" />
+    <PackageReference Include="ZXing.Net" Version="0.16.11" />
+    <PackageReference Include="ZXing.Net.Bindings.SkiaSharp" Version="0.16.24" />
+
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="4.151.1" />
+  </ItemGroup>
+
+</Project>

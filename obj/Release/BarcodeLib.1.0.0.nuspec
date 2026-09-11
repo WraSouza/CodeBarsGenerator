@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BarcodeLib</id>
+    <version>1.0.0</version>
+    <authors>Wladimir</authors>
+    <description>Biblioteca para geração de códigos de barras e QR Codes usando ZXing e SkiaSharp.</description>
+    <tags>barcode qrcode zxing skia</tags>
+    <repository type="git" url="https://github.com/WraSouza/BarcodeLib" commit="e9530f701091bfa71de48d7798d8bb6a0f4a3b55" />
+    <dependencies>
+      <group targetFramework="net10.0">
+        <dependency id="Asp.Versioning.Http" version="10.2.3" exclude="Build,Analyzers" />
+        <dependency id="Asp.Versioning.Mvc" version="10.2.1" exclude="Build,Analyzers" />
+        <dependency id="Asp.Versioning.Mvc.ApiExplorer" version="10.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.OpenApi" version="10.0.11" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.WindowsServices" version="10.0.11" exclude="Build,Analyzers" />
+        <dependency id="Scalar.AspNetCore" version="2.17.2" exclude="Build,Analyzers" />
+        <dependency id="Sentry.AspNetCore" version="14.12.1-dump1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.AspNetCore" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="6.1.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Slack" version="2.2.3" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp.NativeAssets.Linux.NoDependencies" version="4.151.1" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore.Swagger" version="10.2.3" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore.SwaggerGen" version="10.2.3" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore.SwaggerUI" version="10.2.3" exclude="Build,Analyzers" />
+        <dependency id="ZXing.Net" version="0.16.11" exclude="Build,Analyzers" />
+        <dependency id="ZXing.Net.Bindings.SkiaSharp" version="0.16.24" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net10.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net10.0/appsettings.Development.json" buildAction="Content" />
+      <files include="any/net10.0/appsettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\CodeBarsGenerator.runtimeconfig.json" target="lib\net10.0\CodeBarsGenerator.runtimeconfig.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\CodeBarsGenerator.dll" target="lib\net10.0\CodeBarsGenerator.dll" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.Development.json" target="contentFiles\any\net10.0\appsettings.Development.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.json" target="content\appsettings.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.json" target="contentFiles\any\net10.0\appsettings.json" />
+  </files>
+</package>

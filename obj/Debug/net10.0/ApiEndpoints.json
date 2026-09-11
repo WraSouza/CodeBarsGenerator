@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "CodeBarsGenerator.Controllers.GenCodeBarsController",
+    "Method": "GetBarcode",
+    "RelativePath": "api/GenCodeBars/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-Api-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeBarsGenerator.Controllers.GenQrCodesController",
+    "Method": "GetQrcode",
+    "RelativePath": "api/GenQrCodes/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-Api-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodeBarsGenerator.Controllers.GenPureCodeBarsController",
+    "Method": "GetBarcodeV1",
+    "RelativePath": "api/v1/GenPureCodeBars/{codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
