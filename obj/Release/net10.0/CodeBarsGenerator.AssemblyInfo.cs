@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Biblioteca para geração de códigos de barras e QR Codes usando ZXing e SkiaSharp." +
     "")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9530f701091bfa71de48d7798d8bb6a0f4a3b55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5b8e196acbdbbd05cea0c8a130218ec3907fd69")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeBarsGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeBarsGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
