@@ -1,0 +1,76 @@
+name: Deploy CodeBarsGenerator - Teste
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish
+        shell: powershell
+        run: |
+          dotnet publish CodeBarsGenerator.csproj `
+            -c Release `
+            -o "$env:RUNNER_TEMP\CodeBarsGenerator-publish"
+
+      - name: Parar serviço
+        shell: powershell
+        run: |
+          Stop-Service -Name "CodeBarsGenerator-Test" -Force
+          Write-Host "Serviço parado."
+
+      - name: Backup da versão atual
+        shell: powershell
+        run: |
+          $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+
+          $backupPath = "C:\API\CodebarsGenerator_Test\backup\$timestamp"
+
+          New-Item -ItemType Directory -Path $backupPath -Force | Out-Null
+
+          Copy-Item `
+            "C:\API\CodebarsGenerator_Test\publish\*" `
+            $backupPath `
+            -Recurse `
+            -Force
+
+          Write-Host "Backup criado em: $backupPath"
+
+      - name: Atualizar aplicação
+        shell: powershell
+        run: |
+          $publishPath = "C:\API\CodebarsGenerator_Test\publish"
+
+          Remove-Item "$publishPath\*" -Recurse -Force
+
+          Copy-Item `
+            "$env:RUNNER_TEMP\CodeBarsGenerator-publish\*" `
+            $publishPath `
+            -Recurse `
+            -Force
+
+          Write-Host "Aplicação atualizada."
+
+      - name: Iniciar serviço
+        shell: powershell
+        run: |
+          Start-Service -Name "CodeBarsGenerator-Test"
+
+          Start-Sleep -Seconds 5
+
+          $service = Get-Service -Name "CodeBarsGenerator-Test"
+
+          if ($service.Status -ne "Running") {
+              throw "O serviço não iniciou corretamente. Status: $($service.Status)"
+          }
+
+          Write-Host "Serviço iniciado com sucesso."
