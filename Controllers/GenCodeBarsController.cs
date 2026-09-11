@@ -8,7 +8,7 @@ namespace CodeBarsGenerator.Controllers
     [ApiController]
     [ApiVersion(1)]       
     [Route("api/v{version:apiVersion}/[controller]")]
-    public class GenCodeBarsController(IBarcodeService service,ILogger<GenCodeBarsController> logger) : ControllerBase
+    public class GenCodeBarsTestController(IBarcodeService service,ILogger<GenCodeBarsTestController> logger) : ControllerBase
     {        
         
         [HttpGet("{codigo}")]
