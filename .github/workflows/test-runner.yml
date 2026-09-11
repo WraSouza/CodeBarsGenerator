@@ -1,0 +1,17 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Testar servidor
+        shell: powershell
+        run: |
+          Write-Host "Runner funcionando!"
+          Write-Host "Servidor: $env:COMPUTERNAME"
+          Write-Host "Usuário: $env:USERNAME"
+          dotnet --version
