@@ -89,4 +89,10 @@ C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Rel
 C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Release\net10.0\CodeBarsGenerator.pdb
 C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Release\net10.0\CodeBarsGenerator.genruntimeconfig.cache
 C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Release\net10.0\ref\CodeBarsGenerator.dll
-C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Release\net10.0\scopedcss\scopedcss.cache
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\web.config
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\appsettings.Development.json
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\appsettings.json
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\CodeBarsGenerator.deps.json
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\CodeBarsGenerator.runtimeconfig.json
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\publish\CodeBarsGenerator.staticwebassets.endpoints.json
+C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\obj\Release\net10.0\staticwebassets.upToDateCheck.txt

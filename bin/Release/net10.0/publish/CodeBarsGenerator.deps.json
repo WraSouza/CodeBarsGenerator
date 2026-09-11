@@ -33,7 +33,8 @@
         "runtime": {
           "lib/net10.0/Asp.Versioning.Abstractions.dll": {
             "assemblyVersion": "10.2.0.0",
-            "fileVersion": "10.2.9714.15149"
+            "fileVersion": "10.2.9714.15149",
+            "localPath": "Asp.Versioning.Abstractions.dll"
           }
         }
       },
@@ -44,7 +45,8 @@
         "runtime": {
           "lib/net10.0/Asp.Versioning.Http.dll": {
             "assemblyVersion": "10.2.0.0",
-            "fileVersion": "10.2.9730.38217"
+            "fileVersion": "10.2.9730.38217",
+            "localPath": "Asp.Versioning.Http.dll"
           }
         }
       },
@@ -55,7 +57,8 @@
         "runtime": {
           "lib/net10.0/Asp.Versioning.Mvc.dll": {
             "assemblyVersion": "10.2.0.0",
-            "fileVersion": "10.2.9714.15157"
+            "fileVersion": "10.2.9714.15157",
+            "localPath": "Asp.Versioning.Mvc.dll"
           }
         }
       },
@@ -66,7 +69,8 @@
         "runtime": {
           "lib/net10.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
             "assemblyVersion": "10.2.0.0",
-            "fileVersion": "10.2.9714.15157"
+            "fileVersion": "10.2.9714.15157",
+            "localPath": "Asp.Versioning.Mvc.ApiExplorer.dll"
           }
         }
       },
@@ -77,7 +81,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
             "assemblyVersion": "10.0.11.0",
-            "fileVersion": "10.0.1126.37416"
+            "fileVersion": "10.0.1126.37416",
+            "localPath": "Microsoft.AspNetCore.OpenApi.dll"
           }
         }
       },
@@ -85,7 +90,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "fileVersion": "10.0.25.52411",
+            "localPath": "Microsoft.Extensions.DependencyModel.dll"
           }
         }
       },
@@ -96,7 +102,8 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Hosting.WindowsServices.dll": {
             "assemblyVersion": "10.0.0.11",
-            "fileVersion": "10.0.1126.37416"
+            "fileVersion": "10.0.1126.37416",
+            "localPath": "Microsoft.Extensions.Hosting.WindowsServices.dll"
           }
         }
       },
@@ -104,7 +111,8 @@
         "runtime": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "2.7.5.0",
-            "fileVersion": "2.7.5.0"
+            "fileVersion": "2.7.5.0",
+            "localPath": "Microsoft.OpenApi.dll"
           }
         }
       },
@@ -112,7 +120,8 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.1.25517"
+            "fileVersion": "13.0.1.25517",
+            "localPath": "Newtonsoft.Json.dll"
           }
         }
       },
@@ -120,7 +129,8 @@
         "runtime": {
           "lib/net10.0/Scalar.AspNetCore.dll": {
             "assemblyVersion": "2.17.2.0",
-            "fileVersion": "2.17.2.0"
+            "fileVersion": "2.17.2.0",
+            "localPath": "Scalar.AspNetCore.dll"
           }
         }
       },
@@ -128,7 +138,8 @@
         "runtime": {
           "lib/net8.0/Sentry.dll": {
             "assemblyVersion": "14.12.1.0",
-            "fileVersion": "14.12.1.0"
+            "fileVersion": "14.12.1.0",
+            "localPath": "Sentry.dll"
           }
         }
       },
@@ -139,7 +150,8 @@
         "runtime": {
           "lib/net8.0/Sentry.AspNetCore.dll": {
             "assemblyVersion": "14.12.1.0",
-            "fileVersion": "14.12.1.0"
+            "fileVersion": "14.12.1.0",
+            "localPath": "Sentry.AspNetCore.dll"
           }
         }
       },
@@ -150,7 +162,8 @@
         "runtime": {
           "lib/net8.0/Sentry.Extensions.Logging.dll": {
             "assemblyVersion": "14.12.1.0",
-            "fileVersion": "14.12.1.0"
+            "fileVersion": "14.12.1.0",
+            "localPath": "Sentry.Extensions.Logging.dll"
           }
         }
       },
@@ -158,7 +171,8 @@
         "runtime": {
           "lib/net9.0/Serilog.dll": {
             "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+            "fileVersion": "4.3.0.0",
+            "localPath": "Serilog.dll"
           }
         }
       },
@@ -175,7 +189,8 @@
         "runtime": {
           "lib/net10.0/Serilog.AspNetCore.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.0.0"
+            "fileVersion": "10.0.0.0",
+            "localPath": "Serilog.AspNetCore.dll"
           }
         }
       },
@@ -187,7 +202,8 @@
         "runtime": {
           "lib/net10.0/Serilog.Extensions.Hosting.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.0.0"
+            "fileVersion": "10.0.0.0",
+            "localPath": "Serilog.Extensions.Hosting.dll"
           }
         }
       },
@@ -198,7 +214,8 @@
         "runtime": {
           "lib/net10.0/Serilog.Extensions.Logging.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.0.0"
+            "fileVersion": "10.0.0.0",
+            "localPath": "Serilog.Extensions.Logging.dll"
           }
         }
       },
@@ -209,7 +226,8 @@
         "runtime": {
           "lib/net8.0/Serilog.Formatting.Compact.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "fileVersion": "3.0.0.0",
+            "localPath": "Serilog.Formatting.Compact.dll"
           }
         }
       },
@@ -221,7 +239,8 @@
         "runtime": {
           "lib/net10.0/Serilog.Settings.Configuration.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.0.0"
+            "fileVersion": "10.0.0.0",
+            "localPath": "Serilog.Settings.Configuration.dll"
           }
         }
       },
@@ -232,7 +251,8 @@
         "runtime": {
           "lib/net8.0/Serilog.Sinks.Console.dll": {
             "assemblyVersion": "6.1.1.0",
-            "fileVersion": "6.1.1.0"
+            "fileVersion": "6.1.1.0",
+            "localPath": "Serilog.Sinks.Console.dll"
           }
         }
       },
@@ -243,7 +263,8 @@
         "runtime": {
           "lib/net8.0/Serilog.Sinks.Debug.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
+            "fileVersion": "3.0.0.0",
+            "localPath": "Serilog.Sinks.Debug.dll"
           }
         }
       },
@@ -254,7 +275,8 @@
         "runtime": {
           "lib/net9.0/Serilog.Sinks.File.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.0.0"
+            "fileVersion": "7.0.0.0",
+            "localPath": "Serilog.Sinks.File.dll"
           }
         }
       },
@@ -265,7 +287,8 @@
         "runtime": {
           "lib/netstandard2.1/Serilog.Sinks.PeriodicBatching.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.1.0"
+            "fileVersion": "2.3.1.0",
+            "localPath": "Serilog.Sinks.PeriodicBatching.dll"
           }
         }
       },
@@ -278,7 +301,8 @@
         "runtime": {
           "lib/netstandard2.0/Serilog.Sinks.Slack.dll": {
             "assemblyVersion": "2.2.3.0",
-            "fileVersion": "2.2.3.0"
+            "fileVersion": "2.2.3.0",
+            "localPath": "Serilog.Sinks.Slack.dll"
           }
         }
       },
@@ -290,7 +314,8 @@
         "runtime": {
           "lib/net10.0/SkiaSharp.dll": {
             "assemblyVersion": "4.151.0.0",
-            "fileVersion": "4.151.1.0"
+            "fileVersion": "4.151.1.0",
+            "localPath": "SkiaSharp.dll"
           }
         }
       },
@@ -299,67 +324,80 @@
           "runtimes/linux-arm/native/libSkiaSharp.so": {
             "rid": "linux-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm/native/libSkiaSharp.so"
           },
           "runtimes/linux-arm64/native/libSkiaSharp.so": {
             "rid": "linux-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm64/native/libSkiaSharp.so"
           },
           "runtimes/linux-bionic-arm64/native/libSkiaSharp.so": {
             "rid": "linux-bionic-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-bionic-arm64/native/libSkiaSharp.so"
           },
           "runtimes/linux-bionic-x64/native/libSkiaSharp.so": {
             "rid": "linux-bionic-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-bionic-x64/native/libSkiaSharp.so"
           },
           "runtimes/linux-loongarch64/native/libSkiaSharp.so": {
             "rid": "linux-loongarch64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-loongarch64/native/libSkiaSharp.so"
           },
           "runtimes/linux-musl-arm/native/libSkiaSharp.so": {
             "rid": "linux-musl-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-musl-arm/native/libSkiaSharp.so"
           },
           "runtimes/linux-musl-arm64/native/libSkiaSharp.so": {
             "rid": "linux-musl-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-musl-arm64/native/libSkiaSharp.so"
           },
           "runtimes/linux-musl-loongarch64/native/libSkiaSharp.so": {
             "rid": "linux-musl-loongarch64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-musl-loongarch64/native/libSkiaSharp.so"
           },
           "runtimes/linux-musl-riscv64/native/libSkiaSharp.so": {
             "rid": "linux-musl-riscv64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-musl-riscv64/native/libSkiaSharp.so"
           },
           "runtimes/linux-musl-x64/native/libSkiaSharp.so": {
             "rid": "linux-musl-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-musl-x64/native/libSkiaSharp.so"
           },
           "runtimes/linux-riscv64/native/libSkiaSharp.so": {
             "rid": "linux-riscv64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-riscv64/native/libSkiaSharp.so"
           },
           "runtimes/linux-x64/native/libSkiaSharp.so": {
             "rid": "linux-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x64/native/libSkiaSharp.so"
           },
           "runtimes/linux-x86/native/libSkiaSharp.so": {
             "rid": "linux-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x86/native/libSkiaSharp.so"
           }
         }
       },
@@ -368,7 +406,8 @@
           "runtimes/osx/native/libSkiaSharp.dylib": {
             "rid": "osx",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx/native/libSkiaSharp.dylib"
           }
         }
       },
@@ -377,32 +416,38 @@
           "runtimes/win-arm64/native/libSkiaSharp.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/libSkiaSharp.dll"
           },
           "runtimes/win-arm64/native/libSkiaSharp.pdb": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/libSkiaSharp.pdb"
           },
           "runtimes/win-x64/native/libSkiaSharp.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/libSkiaSharp.dll"
           },
           "runtimes/win-x64/native/libSkiaSharp.pdb": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/libSkiaSharp.pdb"
           },
           "runtimes/win-x86/native/libSkiaSharp.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/libSkiaSharp.dll"
           },
           "runtimes/win-x86/native/libSkiaSharp.pdb": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/libSkiaSharp.pdb"
           }
         }
       },
@@ -413,7 +458,8 @@
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
             "assemblyVersion": "10.2.3.0",
-            "fileVersion": "10.2.3.2721"
+            "fileVersion": "10.2.3.2721",
+            "localPath": "Swashbuckle.AspNetCore.Swagger.dll"
           }
         }
       },
@@ -424,7 +470,8 @@
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
             "assemblyVersion": "10.2.3.0",
-            "fileVersion": "10.2.3.2721"
+            "fileVersion": "10.2.3.2721",
+            "localPath": "Swashbuckle.AspNetCore.SwaggerGen.dll"
           }
         }
       },
@@ -432,7 +479,8 @@
         "runtime": {
           "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "assemblyVersion": "10.2.3.0",
-            "fileVersion": "10.2.3.2721"
+            "fileVersion": "10.2.3.2721",
+            "localPath": "Swashbuckle.AspNetCore.SwaggerUI.dll"
           }
         }
       },
@@ -440,7 +488,8 @@
         "runtime": {
           "lib/net10.0/System.ServiceProcess.ServiceController.dll": {
             "assemblyVersion": "10.0.0.11",
-            "fileVersion": "10.0.1126.37416"
+            "fileVersion": "10.0.1126.37416",
+            "localPath": "System.ServiceProcess.ServiceController.dll"
           }
         },
         "runtimeTargets": {
@@ -448,7 +497,8 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "10.0.0.11",
-            "fileVersion": "10.0.1126.37416"
+            "fileVersion": "10.0.1126.37416",
+            "localPath": "runtimes/win/lib/net10.0/System.ServiceProcess.ServiceController.dll"
           }
         }
       },
@@ -456,7 +506,8 @@
         "runtime": {
           "lib/net9.0/zxing.dll": {
             "assemblyVersion": "0.16.11.0",
-            "fileVersion": "0.16.11.0"
+            "fileVersion": "0.16.11.0",
+            "localPath": "zxing.dll"
           }
         }
       },
@@ -468,7 +519,8 @@
         "runtime": {
           "lib/net10.0/ZXing.SkiaSharp.dll": {
             "assemblyVersion": "0.16.24.0",
-            "fileVersion": "0.16.24.0"
+            "fileVersion": "0.16.24.0",
+            "localPath": "ZXing.SkiaSharp.dll"
           }
         }
       }

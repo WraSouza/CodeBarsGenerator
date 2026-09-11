@@ -6,7 +6,7 @@
     <authors>Wladimir</authors>
     <description>Biblioteca para geração de códigos de barras e QR Codes usando ZXing e SkiaSharp.</description>
     <tags>barcode qrcode zxing skia</tags>
-    <repository type="git" url="https://github.com/WraSouza/BarcodeLib" commit="e9530f701091bfa71de48d7798d8bb6a0f4a3b55" />
+    <repository type="git" url="https://github.com/WraSouza/BarcodeLib" commit="dd7e94773480c22d20357dac7eca11b36860ea66" />
     <dependencies>
       <group targetFramework="net10.0">
         <dependency id="Asp.Versioning.Http" version="10.2.3" exclude="Build,Analyzers" />
@@ -33,16 +33,34 @@
       </group>
     </frameworkReferences>
     <contentFiles>
+      <files include="any/net10.0/publish/web.config" buildAction="Content" />
       <files include="any/net10.0/appsettings.Development.json" buildAction="Content" />
       <files include="any/net10.0/appsettings.json" buildAction="Content" />
+      <files include="any/net10.0/publish/appsettings.Development.json" buildAction="Content" />
+      <files include="any/net10.0/publish/appsettings.json" buildAction="Content" />
+      <files include="any/net10.0/publish/CodeBarsGenerator.deps.json" buildAction="Content" />
+      <files include="any/net10.0/publish/CodeBarsGenerator.runtimeconfig.json" buildAction="Content" />
+      <files include="any/net10.0/publish/CodeBarsGenerator.staticwebassets.endpoints.json" buildAction="Content" />
     </contentFiles>
   </metadata>
   <files>
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\CodeBarsGenerator.runtimeconfig.json" target="lib\net10.0\CodeBarsGenerator.runtimeconfig.json" />
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\bin\Release\net10.0\CodeBarsGenerator.dll" target="lib\net10.0\CodeBarsGenerator.dll" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\web.config" target="content\publish\web.config" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\web.config" target="contentFiles\any\net10.0\publish\web.config" />
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.Development.json" target="content\appsettings.Development.json" />
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.Development.json" target="contentFiles\any\net10.0\appsettings.Development.json" />
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.json" target="content\appsettings.json" />
     <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\appsettings.json" target="contentFiles\any\net10.0\appsettings.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\appsettings.Development.json" target="content\publish\appsettings.Development.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\appsettings.Development.json" target="contentFiles\any\net10.0\publish\appsettings.Development.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\appsettings.json" target="content\publish\appsettings.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\appsettings.json" target="contentFiles\any\net10.0\publish\appsettings.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.deps.json" target="content\publish\CodeBarsGenerator.deps.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.deps.json" target="contentFiles\any\net10.0\publish\CodeBarsGenerator.deps.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.runtimeconfig.json" target="content\publish\CodeBarsGenerator.runtimeconfig.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.runtimeconfig.json" target="contentFiles\any\net10.0\publish\CodeBarsGenerator.runtimeconfig.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.staticwebassets.endpoints.json" target="content\publish\CodeBarsGenerator.staticwebassets.endpoints.json" />
+    <file src="C:\Users\wladimir.souza\source\repos\CodeBarsGenerator\CodeBarsGenerator\publish\CodeBarsGenerator.staticwebassets.endpoints.json" target="contentFiles\any\net10.0\publish\CodeBarsGenerator.staticwebassets.endpoints.json" />
   </files>
 </package>
