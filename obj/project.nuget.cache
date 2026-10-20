@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/qVzgLFOuOk=",
+  "dgSpecHash": "6lg8Q0CDBmA=",
   "success": true,
   "projectFilePath": "C:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\CodeBarsGenerator.csproj",
   "expectedPackageFiles": [
@@ -37,7 +37,11 @@
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.2.3\\swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\system.serviceprocess.servicecontroller\\10.0.11\\system.serviceprocess.servicecontroller.10.0.11.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\zxing.net\\0.16.11\\zxing.net.0.16.11.nupkg.sha512",
-    "C:\\Users\\wladimir.souza\\.nuget\\packages\\zxing.net.bindings.skiasharp\\0.16.24\\zxing.net.bindings.skiasharp.0.16.24.nupkg.sha512"
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\zxing.net.bindings.skiasharp\\0.16.24\\zxing.net.bindings.skiasharp.0.16.24.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.12\\microsoft.netcore.app.ref.10.0.12.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\10.0.12\\microsoft.windowsdesktop.app.ref.10.0.12.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\10.0.12\\microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\10.0.12\\microsoft.netcore.app.host.win-x64.10.0.12.nupkg.sha512"
   ],
   "logs": []
 }

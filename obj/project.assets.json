@@ -1666,11 +1666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\CodeBarsGenerator.csproj",
+      "projectUniqueName": "c:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\CodeBarsGenerator.csproj",
       "projectName": "BarcodeLib",
-      "projectPath": "C:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\CodeBarsGenerator.csproj",
+      "projectPath": "c:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\CodeBarsGenerator.csproj",
       "packagesPath": "C:\\Users\\wladimir.souza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\obj\\",
+      "outputPath": "c:\\Users\\wladimir.souza\\source\\repos\\CodeBarsGenerator\\CodeBarsGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1707,7 +1707,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "11.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -1790,6 +1790,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[10.0.12, 10.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[10.0.12, 10.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[10.0.12, 10.0.12]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[10.0.12, 10.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1798,7 +1816,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100-rc.1.26425.128/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

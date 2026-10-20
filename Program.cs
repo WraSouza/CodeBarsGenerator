@@ -6,6 +6,7 @@ using Serilog.Events;
 using Serilog.Sinks.Slack;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.RateLimiting;
+using CodeBarsGenerator.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,6 +71,8 @@ builder.Services.AddRateLimiter(options =>
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddProblemDetails();
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpClient();
@@ -118,6 +121,10 @@ builder.Services.AddScoped<IQrcodeService, QrCodeService>();
 
 var app = builder.Build();
 
+app.UseExceptionHandler();
+
+app.UseStatusCodePages();
+
 if (useSentry)
 {
     app.UseSentryTracing();
@@ -126,6 +133,10 @@ if (useSentry)
 app.MapOpenApi();
 app.MapScalarApiReference();
 
+var versionSet = app.NewApiVersionSet()
+    .HasApiVersion(new ApiVersion(1, 0))
+    .ReportApiVersions()
+    .Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -133,6 +144,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+var api = app.MapGroup("/api/v{version:apiVersion}")
+    .WithApiVersionSet(versionSet);
+
+api.GenCodeBarsEndpoints();
+api.GenGs1CodeBarsEndpoints();
+api.GenPureCodeBarsEndpoints();
+api.GenQrCodeEndpoints();
+api.GenVerticalCodeBarsEndpoints();
 
 //app.UseHttpsRedirection();
 app.MapHealthChecks("/health");
